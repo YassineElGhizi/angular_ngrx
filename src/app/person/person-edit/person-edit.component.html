@@ -1,0 +1,7 @@
+<h4>Edit Person</h4>
+<input #id_person [(ngModel)]="id" hidden>
+<label>Name</label>
+<input #box [(ngModel)]="name">
+<label>Age</label>
+<input type="number" #ageInput [(ngModel)]="age">
+<button (click)="update_store(id_person.value , box.value , ageInput.value)" >Update</button>
