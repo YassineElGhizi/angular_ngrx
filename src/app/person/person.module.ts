@@ -6,13 +6,15 @@ import {StoreModule} from "@ngrx/store";
 import {personFeatureKey, reducer} from "./store/reducer/person.reducer";
 import { PersonEditComponent } from './person-edit/person-edit.component';
 import {FormsModule} from "@angular/forms";
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     PersonViewComponent,
     PersonAddComponent,
-    PersonEditComponent
+    PersonEditComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import {FormsModule} from "@angular/forms";
   exports: [
     PersonViewComponent,
     PersonAddComponent,
-    PersonEditComponent
+    PersonEditComponent,
+    HomeComponent
   ]
 })
 export class PersonModule {
